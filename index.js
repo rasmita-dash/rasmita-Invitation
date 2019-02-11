@@ -7,8 +7,6 @@ $(document)
     $(".preload").fadeOut(2000, function() {
       $(".content").fadeIn(1000);        
   });
-    document.getElementById("page").style.display = "block";
-    document.getElementById("loading").style.diplay = "none";
     loadGallery(true, 'a.thumbnail');
 
     //This function disables buttons when needed
