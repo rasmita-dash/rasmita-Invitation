@@ -1,10 +1,9 @@
-#page{
-    display:none;
-}
-#laoding{
-    display:block;
-    background-image: url('media/works.gif');
-}
+.content {display:none;}
+.preload { width:100px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;}
 .homeImage {
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -29,6 +28,7 @@
     width: 100%;
     height: 100%;
     background-image: url('media/date.jpg');
+    /* background-attachment: fixed; */
 }
 .getting-married label{
     text-align: center;
@@ -85,7 +85,7 @@
 	background: -webkit-linear-gradient(maroon, orange);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font: 400 3vw/1.2 'Great Vibes', Helvetica, sans-serif;
+    font: 400 5vw/1.2 'Great Vibes', Helvetica, sans-serif;
 }
 .program {
     color: #FFF;
@@ -97,6 +97,7 @@
     background-size: cover;
     width: 100%;
     height: 100%;
+    /* background-attachment: fixed; */
 }
 .right-align{
     margin-left: 40%;
@@ -123,23 +124,30 @@
     padding: 0;
 }
 /* Gallery style end */
+.courtsey{    
+    text-align: center;
+	background: -webkit-linear-gradient(maroon, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font: 400 3vw/1.2 'Great Vibes', Helvetica, sans-serif;
+}
 
 @media only screen and (max-width: 768px){
     .homeImage {
         background-image: url('media/name_small.jpg');
-        height: 50%;
+        height: 40%;
     }
     .getting-married{
         background-image: url('media/date_small.jpg');
-        height: 50%;
+        height: 40%;
     }
     .story-container{
         background-image: url('media/story_small.jpeg');
-        height: 50%;
+        height: 40%;
     }
     .program {
         background-image: url('media/program_small.jpeg');
-        height: 50%;
+        height: 40%;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px){
@@ -169,5 +177,10 @@
     }
 }
 @media only screen and (max-width: 768px) and (orientation: portrait ){
-    
+    .getting-married{
+        background-attachment: fixed;
+    }
+    .program{
+        background-attachment: fixed;
+    }
 }
