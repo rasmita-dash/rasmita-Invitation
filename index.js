@@ -1,36 +1,11 @@
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    var section1Height = $("#section1").height();
-  // if (document.body.scrollTop > section1Height *0.5) {
-  //   // $("#section2").addClass('sectionOnTop')
-  //   $('.move-in-to-place').css({
-  //     bottom: 0,
-  //     '-webkit-transition': 'all 1s, -webkit-transform 1s',
-  //     'transition': 'all 1s, transform 1s',
-  //     'width':'100%',
-  //     'height':'100%',
-  //     'opacity':1,
-  // })
-  // } else {
-  //   // $("#section2").removeClass('sectionOnTop');
-  //   $('.move-in-to-place').css({
-  //     'position': absolute,
-  //     'bottom': '-100%',
-  //     'height' : '100%',
-  //     'width' : '100%',
-  //     'opacity':0
-  //   })
-  // }
-}
-
 // Gallery Start
 
 let modalId = $('#image-gallery');
 
 $(document)
   .ready(function () {
-
+    document.getElementById("page").style.display = "block";
+    document.getElementById("loading").style.diplay = "none";
     loadGallery(true, 'a.thumbnail');
 
     //This function disables buttons when needed
