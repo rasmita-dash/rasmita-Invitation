@@ -184,3 +184,23 @@
         background-attachment: fixed;
     }
 }
+@media only screen and (max-width: 768px) and (orientation: portrait ){
+    .getting-married{
+        background-attachment: fixed;
+    }
+    .program{
+        background-attachment: fixed;
+    }
+    .homeImage {
+        height: 100%;
+    }
+    .getting-married{
+        height: 100%;
+    }
+    .story-container{
+        height: 100%;
+    }
+    .program {
+        height: 100%;
+    }
+}
