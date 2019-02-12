@@ -131,8 +131,27 @@
     -webkit-text-fill-color: transparent;
     font: 400 3vw/1.2 'Great Vibes', Helvetica, sans-serif;
 }
-
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) and (orientation: portrait ){
+    .homeImage {
+        background-image: url('media/name_small.jpg');
+        height: 100%;
+    }
+    .getting-married{
+        background-image: url('media/date_small.jpg');
+        height: 100%;
+        /* background-attachment: fixed; */
+    }
+    .story-container{
+        background-image: url('media/story_small.jpeg');
+        height: 100%;
+    }
+    .program {
+        background-image: url('media/program_small.jpeg');
+        height: 100%;
+        /* background-attachment: fixed; */
+    }
+}
+@media only screen and (max-width: 768px) {
     .homeImage {
         background-image: url('media/name_small.jpg');
         height: 40%;
@@ -149,8 +168,8 @@
         background-image: url('media/program_small.jpeg');
         height: 40%;
     }
-}
-@media only screen and (min-width: 768px) and (max-width: 992px){
+} 
+@media only screen and (min-width: 769px) and (max-width: 992px){
     .homeImage {
         background-image: url('media/name_medium.jpg');
         height: 70%;
@@ -174,33 +193,5 @@
     }
     .program{
         background-attachment: fixed;
-    }
-}
-@media only screen and (max-width: 768px) and (orientation: portrait ){
-    .getting-married{
-        background-attachment: fixed;
-    }
-    .program{
-        background-attachment: fixed;
-    }
-}
-@media only screen and (max-width: 768px) and (orientation: portrait ){
-    .getting-married{
-        background-attachment: fixed;
-    }
-    .program{
-        background-attachment: fixed;
-    }
-    .homeImage {
-        height: 100%;
-    }
-    .getting-married{
-        height: 100%;
-    }
-    .story-container{
-        height: 100%;
-    }
-    .program {
-        height: 100%;
     }
 }
