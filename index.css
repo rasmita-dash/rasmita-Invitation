@@ -63,11 +63,6 @@
 .program-name{
     color: #6C2608;
     font-size: 2vw;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
 }
 .program-time{
     color: #FFF;
